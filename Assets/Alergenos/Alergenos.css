@@ -1,0 +1,449 @@
+/* Botón Modal */
+.boton-Serranito-Andaluz,
+.boton-Chivito-Valenciano,
+.boton-Pepito-Español,
+.boton-Llonguet-Sobrasada,
+.boton-Tortilla-De-Patata,
+.boton-Bocata-De-Calamares,
+.boton-Campero-Malagueño,
+.boton-Pollo,
+.boton-Tellinas,
+.boton-Caracoles,
+.boton-Manitas-Callos,
+.boton-Albondigas {
+    padding: 30px;
+}
+
+.boton-Serranito-Andaluz label,
+.boton-Chivito-Valenciano label,
+.boton-Pepito-Español label,
+.boton-Llonguet-Sobrasada label,
+.boton-Tortilla-De-Patata label,
+.boton-Bocata-De-Calamares label,
+.boton-Campero-Malagueño label,
+.boton-Pollo label,
+.boton-Tellinas label,
+.boton-Caracoles label,
+.boton-Manitas-Callos label,
+.boton-Albondigas label {
+    background-color: #ff5e00;
+    box-shadow: 0 0 15px #ff3c00, 0 0 30px #ff3c00;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 10px 30px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.boton-Serranito-Andaluz label:hover,
+.boton-Chivito-Valenciano label:hover,
+.boton-Pepito-Español label:hover,
+.boton-Llonguet-Sobrasada label:hover,
+.boton-Tortilla-De-Patata label:hover,
+.boton-Bocata-De-Calamares label:hover,
+.boton-Campero-Malagueño label:hover,
+.boton-Pollo label:hover,
+.boton-Tellinas label:hover,
+.boton-Caracoles label:hover,
+.boton-Manitas-Callos label:hover,
+.boton-Albondigas label:hover {
+    background-color: #ff3c00;
+}
+
+
+/* Ventana Modal */
+#btn-Serranito-Andaluz,
+#btn-Chivito-Valenciano,
+#btn-Pepito-Español,
+#btn-Llonguet-Sobrasada,
+#btn-Tortilla-De-Patata,
+#btn-Bocata-De-Calamares,
+#btn-Campero-Malagueño,
+#btn-Pollo,
+#btn-Tellinas,
+#btn-Caracoles,
+#btn-Manitas-Callos,
+#btn-Albondigas {
+    display: none;
+}
+
+.container-Serranito-Andaluz,
+.container-Chivito-Valenciano,
+.container-Pepito-Español,
+.container-Llonguet-Sobrasada,
+.container-Tortilla-De-Patata,
+.container-Bocata-De-Calamares,
+.container-Campero-Malagueño,
+.container-Pollo,
+.container-Tellinas,
+.container-Caracoles,
+.container-Manitas-Callos,
+.container-Albondigas {
+    width: 100%;
+    height: 110vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    /* Asegurar que la modal esté encima de otros elementos */
+
+}
+
+#btn-Serranito-Andaluz:checked~.container-Serranito-Andaluz,
+#btn-Chivito-Valenciano:checked~.container-Chivito-Valenciano,
+#btn-Pepito-Español:checked~.container-Pepito-Español,
+#btn-Llonguet-Sobrasada:checked~.container-Llonguet-Sobrasada,
+#btn-Bocata-De-Calamares:checked~.container-Bocata-De-Calamares,
+#btn-Campero-Malagueño:checked~.container-Campero-Malagueño,
+#btn-Tortilla-De-Patata:checked~.container-Tortilla-De-Patata,
+#btn-Pollo:checked~.container-Pollo,
+#btn-Tellinas:checked~.container-Tellinas,
+#btn-Caracoles:checked~.container-Caracoles,
+#btn-Manitas-Callos:checked~.container-Manitas-Callos,
+#btn-Albondigas:checked~.container-Albondigas {
+    display: flex;
+}
+
+.content-Serranito-Andaluz,
+.content-Chivito-Valenciano,
+.content-Pepito-Español,
+.content-Llonguet-Sobrasada,
+.content-Tortilla-De-Patata,
+.content-Bocata-De-Calamares,
+.content-Campero-Malagueño,
+.content-Pollo,
+.content-Tellinas,
+.content-Caracoles,
+.content-Manitas-Callos,
+.content-Albondigas {
+    width: 100%;
+    max-width: 1000px;
+    padding: 30px;
+    background-color: black;
+    border-radius: 30px;
+    box-shadow: 0 0 15px #fd9814, 0 0 30px #fd9814, 0 0 60px 20px #fd9814;
+    /* Sombra para efecto de elevación */
+    margin-bottom: 10vh;
+    color: white;
+}
+
+.content-Serranito-Andaluz h2,
+.content-Chivito-Valenciano h2,
+.content-Pepito-Español h2,
+.content-Llonguet-Sobrasada h2,
+.content-Tortilla-De-Patata h2,
+.content-Bocata-De-Calamares h2,
+.content-Campero-Malagueño h2,
+.content-Pollo h2,
+.content-Tellinas h2,
+.content-Caracoles h2,
+.content-Manitas-Callos h2,
+.content-Albondigas h2 {
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.content-Serranito-Andaluz p,
+.content-Chivito-Valenciano p,
+.content-Pepito-Español p,
+.content-Llonguet-Sobrasada p,
+.content-Tortilla-De-Patata p,
+.content-Bocata-De-Calamares p,
+.content-Campero-Malagueño p,
+.content-Pollo p,
+.content-Tellinas p,
+.content-Caracoles p,
+.content-Manitas-Callos p,
+.content-Albondigas p {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Para Imagenes*/
+.content-Serranito-Andaluz img,
+.content-Chivito-Valenciano img,
+.content-Pepito-Español img,
+.content-Llonguet-Sobrasada img,
+.content-Tortilla-De-Patata img,
+.content-Bocata-De-Calamares img,
+.content-Campero-Malagueño img,
+.content-Pollo img,
+.content-Tellinas img,
+.content-Caracoles img,
+.content-Manitas-Callos img,
+.content-Albondigas img {
+    width: 72px;
+}
+
+.content-Serranito-Andaluz .btn-cerrar,
+.content-Chivito-Valenciano .btn-cerrar,
+.content-Pepito-Español .btn-cerrar,
+.content-Llonguet-Sobrasada .btn-cerrar,
+.content-Tortilla-De-Patata .btn-cerrar,
+.content-Bocata-De-Calamares .btn-cerrar,
+.content-Campero-Malagueño .btn-cerrar,
+.content-Pollo .btn-cerrar,
+.content-Tellinas .btn-cerrar,
+.content-Caracoles .btn-cerrar,
+.content-Manitas-Callos .btn-cerrar,
+.content-Albondigas .btn-cerrar {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.content-Serranito-Andaluz .btn-cerrar label,
+.content-Chivito-Valenciano .btn-cerrar label,
+.content-Pepito-Español .btn-cerrar label,
+.content-Llonguet-Sobrasada .btn-cerrar label,
+.content-Tortilla-De-Patata .btn-cerrar label,
+.content-Bocata-De-Calamares .btn-cerrar label,
+.content-Campero-Malagueño .btn-cerrar label,
+.content-Pollo .btn-cerrar label,
+.content-Tellinas .btn-cerrar label,
+.content-Caracoles .btn-cerrar label,
+.content-Manitas-Callos .btn-cerrar label,
+.content-Albondigas .btn-cerrar label {
+    background-color: #ff5e00;
+    box-shadow: 0 0 15px #ff3c00, 0 0 30px #ff3c00;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 15px 55px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+
+/* Fondo de cerrar modal */
+.cerrar-Serranito-Andaluz,
+.cerrar-Chivito-Valenciano,
+.cerrar-Pepito-Español,
+.cerrar-Llonguet-Sobrasada,
+.cerrar-Tortilla-De-Patata,
+.cerrar-Bocata-De-Calamares,
+.cerrar-Campero-Malagueño,
+.cerrar-Pollo,
+.cerrar-Tellinas,
+.cerrar-Caracoles,
+.cerrar-Manitas-Callos,
+.cerrar-Albondigas {
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    /* Asegurar que el fondo esté detrás de la modal */
+}
+
+@media screen and (max-width: 800px) {
+
+    .content-Serranito-Andaluz,
+    .content-Chivito-Valenciano,
+    .content-Pepito-Español,
+    .content-Llonguet-Sobrasada,
+    .content-Tortilla-De-Patata,
+    .content-Bocata-De-Calamares,
+    .content-Campero-Malagueño,
+    .content-Pollo,
+    .content-Tellinas,
+    .content-Caracoles,
+    .content-Manitas-Callos,
+    .content-Albondigas {
+        width: 70%;
+    }
+
+    /* Para Imagenes*/
+    .content-Serranito-Andaluz img,
+    .content-Chivito-Valenciano img,
+    .content-Pepito-Español img,
+    .content-Llonguet-Sobrasada img,
+    .content-Tortilla-De-Patata img,
+    .content-Bocata-De-Calamares img,
+    .content-Campero-Malagueño img,
+    .content-Pollo img,
+    .content-Tellinas img,
+    .content-Caracoles img,
+    .content-Manitas-Callos img,
+    .content-Albondigas img {
+        width: 72px;
+    }
+
+    .content-Serranito-Andaluz h2,
+    .content-Chivito-Valenciano h2,
+    .content-Pepito-Español h2,
+    .content-Llonguet-Sobrasada h2,
+    .content-Tortilla-De-Patata h2,
+    .content-Bocata-De-Calamares h2,
+    .content-Campero-Malagueño h2,
+    .content-Pollo h2,
+    .content-Tellinas h2,
+    .content-Caracoles h2,
+    .content-Manitas-Callos h2,
+    .content-Albondigas h2 {
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+
+    .content-Serranito-Andaluz p,
+    .content-Chivito-Valenciano p,
+    .content-Pepito-Español p,
+    .content-Llonguet-Sobrasada p,
+    .content-Tortilla-De-Patata p,
+    .content-Bocata-De-Calamares p,
+    .content-Campero-Malagueño p,
+    .content-Pollo p,
+    .content-Tellinas p,
+    .content-Caracoles p,
+    .content-Manitas-Callos p,
+    .content-Albondigas p {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .content-Serranito-Andaluz .btn-cerrar label,
+    .content-Chivito-Valenciano .btn-cerrar label,
+    .content-Pepito-Español .btn-cerrar label,
+    .content-Llonguet-Sobrasada .btn-cerrar label,
+    .content-Tortilla-De-Patata .btn-cerrar label,
+    .content-Bocata-De-Calamares .btn-cerrar label,
+    .content-Campero-Malagueño .btn-cerrar label,
+    .content-Pollo .btn-cerrar label,
+    .content-Tellinas .btn-cerrar label,
+    .content-Caracoles .btn-cerrar label,
+    .content-Manitas-Callos .btn-cerrar label,
+    .content-Albondigas .btn-cerrar label {
+        background-color: #ff5e00;
+        box-shadow: 0 0 15px #ff3c00, 0 0 30px #ff3c00;
+        color: black;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 12px;
+        padding: 10px 55px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+
+
+}
+
+
+
+/* Original 
+
+.boton-modal {
+    padding: 30px;
+}
+
+.boton-modal label {
+    padding: 10px 15px;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    border-radius: 50px;
+    border: solid 2px #ff9100;
+    cursor: pointer;
+    transition: all 300ms ease;
+    transform: scale(1);
+}
+
+.boton-modal label:hover {
+    background-color: #fd9814;
+    transform: scale(1.2);
+}
+
+
+#btn-modal {
+    display: none;
+}
+
+.container-modal {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#btn-modal:checked~.container-modal {
+    display: flex;
+}
+
+.content-modal {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50vh;
+}
+
+.content-modal h2 {
+    margin-bottom: 15px;
+}
+
+.content-modal p {
+    padding: 15px 0px;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    color: black;
+    font-weight: bold;
+}
+
+.content-modal .btn-cerrar {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.content-modal .btn-cerrar label {
+    padding: 7px 10px;
+    background-color: #5488a3;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.content-modal .btn-cerrar label:hover {
+    background-color: #185E83;
+}
+
+.cerrar-modal {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+@media screen and (max-width:800px) {
+    .content-modal {
+        width: 90%;
+    }
+}
+
+*/

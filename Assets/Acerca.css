@@ -1,0 +1,292 @@
+/* Importar fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Reset general y configuración de fuentes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'Ubuntu', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0.849));
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Barra de navegación */
+
+nav {
+    background: black;
+    height: 90px;
+    width: 100%;
+    font-weight: bolder;
+}
+
+.enlace {
+    position: absolute;
+    display: flex;
+    color: #fd9814;
+}
+
+.logo {
+    height: 70px;
+    margin-left: 5px;
+    margin-top: 10px
+}
+
+.title {
+    height: 90px;
+    margin-top: 40px;
+    margin-left: 5px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 5px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 90px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 12px;
+    padding: 7px 13px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+li a.active,
+li a:hover {
+    background: #fd9814;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
+
+/* Footer */
+.footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fd9814;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 0 10px #fd9814, 0 0 30px #fd9814;
+    backdrop-filter: blur(2px);
+    border-radius: 0;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.cols {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permitir que los elementos se envuelvan en dispositivos más pequeños */
+    align-items: start;
+}
+
+.cols .about-col {
+    flex: 1;
+    /* Ajustar el ancho según sea necesario */
+}
+
+.cols .about-col h3 {
+    color: #fd9814;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.cols .about-col p {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+
+/* Media queries para hacer el diseño responsive */
+
+@media (max-width: 920px) {
+
+    .contenedor-description {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 760px) {
+
+    .description-logo img {
+        max-width: 250px;
+    }
+
+    .enlace h3 {
+        display: none;
+    }
+
+    .card-wrap {
+        justify-content: center;
+        max-width: 500px;
+    }
+
+    article.card {
+        background-color: #000000;
+        margin: 2rem;
+        margin-top: 30px;
+        border-radius: 15px;
+        box-shadow: 0 0 30px 10px #ffffff;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .description-logo img {
+        max-width: 200px;
+    }
+
+    .custom-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .footer-logo img {
+        width: 60px;
+    }
+
+    .footer-nav li a {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}
+
+
+/* Boton Responsive Barra de navegació */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 952px) {
+    .enlace {
+        padding-left: 20px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        top: 90px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 10px;
+
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    li a:hover,
+    li a.active {
+        background: none;
+        color: red;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+
+
+/* Estilo general para scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    /* Ancho de la scrollbar */
+    height: 6px;
+}
+
+/* Estilo del riel (track) de la scrollbar */
+::-webkit-scrollbar-track {
+    background: black;
+    /* Color del riel */
+}
+
+/* Estilo del pulgar (thumb) de la scrollbar vertical */
+::-webkit-scrollbar-thumb {
+    background: #fd9814;
+    /* Color del pulgar */
+    border-radius: 10px;
+    /* Bordes redondeados del pulgar */
+}
+
+/* Estilo del pulgar al estar en hover para scrollbar vertical */
+::-webkit-scrollbar-thumb:hover {
+    background: #fd9814;
+    /* Color del pulgar al hacer hover */
+}
+
+/* Estilo del riel (track) de la scrollbar horizontal */
+::-webkit-scrollbar-track:horizontal {
+    background: black;
+    /* Color del riel horizontal */
+}
+
+/* Estilo del pulgar (thumb) de la scrollbar horizontal */
+::-webkit-scrollbar-thumb:horizontal {
+    background: #fd9814;
+    /* Color del pulgar horizontal */
+    border-radius: 10px;
+    /* Bordes redondeados del pulgar horizontal */
+}
+
+/* Estilo del pulgar al estar en hover para scrollbar horizontal */
+::-webkit-scrollbar-thumb:horizontal:hover {
+    background: #fd9814;
+    /* Color del pulgar horizontal al hacer hover */
+}

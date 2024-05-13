@@ -1,0 +1,160 @@
+/*
+.contenedor-navbar {
+    width: 100%;
+    padding: 30px 20px;
+    background-color: #00000080;
+    box-shadow: 0 0 5px #fd9814,
+        0 0 25px #fd9814;
+    backdrop-filter: blur(2px);
+    background-color: #00000099;
+/
+
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-logo {
+    color: #fd9814;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar-logo img {
+    width: 40px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+
+.navbar ul {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+.navbar ul li {
+    list-style: none;
+    font-weight: bold;
+}
+
+.navbar ul li a {
+    color: #ffffff;
+    font-size: 13px;
+    margin-right: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #fd9814;
+}
+
+
+.navbar ul li:hover a {
+    box-shadow: 0 0 10px 10px #fd9814;
+    background-color: #fd9814;
+}
+*/
+
+
+/* Parte Seis */
+
+/* Tarjetas de Blog */
+
+article.card {
+  max-width: 28%;
+  background-color: #000000cb;
+  margin: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 0 30px 5px #fd9814;
+  margin-bottom: 70px;
+}
+
+.header-card {
+  display: flex;
+}
+
+.header-card img {
+  border-radius: 15px 15px 0 0;
+  max-height: 300px;
+  height: 300px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.categoria-card {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.categoria-card span {
+  background: rgba(0, 0, 0, 0.603);
+  border: 3px solid #fd9814;
+  border-radius: 4px;
+  padding: .2rem .5rem;
+  color: #fff;
+}
+
+.card footer {
+  display: flex;
+  flex-flow: column;
+  padding: 0 1rem;
+}
+
+.card .texto-card {
+  text-align: justify;
+}
+
+.card .texto-card p {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: #fd9814;
+}
+
+.card .texto-card h3 {
+  color: #fd9814;
+}
+
+.perfil-card {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.img-perfil-card {
+  display: flex;
+}
+
+
+.img-perfil-card img {
+  width: 50px;
+  border-radius: 20%;
+  margin: 1rem 1rem 1rem 0;
+  background-color: #fd9814;
+  padding: 10px;
+}
+
+.text-perfil-card {
+  display: flex;
+  flex-flow: column;
+  color: #fd9814;
+}
+
+.text-perfil-card span:nth-child(2) {
+  color: #fd9814;
+}
+
+.card-wrap {
+  display: flex;
+  flex-flow: wrap;
+}
+
+@media (max-width:768px) {
+  .card-wrap {
+    justify-content: center;
+  }
+}

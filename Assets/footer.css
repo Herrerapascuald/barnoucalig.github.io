@@ -1,0 +1,68 @@
+/* Footer */
+.footer {
+    background-color: rgba(0, 0, 0, 0.759);
+    color: #fd9814;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.cols {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permitir que los elementos se envuelvan en dispositivos más pequeños */
+    align-items: start;
+}
+
+.cols .about-col {
+    flex: 1;
+    /* Ajustar el ancho según sea necesario */
+    font-size: 16px;
+}
+
+.cols .about-col h3 {
+    color: #fd9814;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.cols .about-col p {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+
+/* Estilo general para scrollbar */
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fd9814;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #854b01;
+}
+
+::-webkit-scrollbar-track:horizontal {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    background: #fd9814;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:horizontal:hover {
+    background: #854b01;
+}

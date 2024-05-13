@@ -1,0 +1,92 @@
+/* Contenedor de la descripción */
+.contenedor-description {
+    width: 90%;
+    padding: 20px;
+    box-shadow: 10px 15px 15px black;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    margin: 5%;
+    margin-top: 120px;
+    transition: all 900ms ease;
+    overflow: hidden;
+}
+
+.description-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.description-logo img {
+    width: 25%;
+    height: auto;
+    max-width: 350px;
+    margin-bottom: 20px;
+}
+
+.description {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.439);
+    backdrop-filter: blur(5px);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.description h2 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.description p {
+    color: black;
+    text-align: justify;
+    padding: 20px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.custom-button {
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#selected {
+    background-color: #ff5e00;
+    box-shadow: 0 0 15px #ff3c00, 0 0 30px #ff3c00;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 10px 30px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#selected:hover {
+    background-color: #ff3c00;
+}
+
+@media (max-width: 768px) {
+
+    .description-logo img {
+        max-width: 230px;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .description-logo img {
+        max-width: 200px;
+    }
+
+    .custom-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}

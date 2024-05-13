@@ -1,0 +1,106 @@
+
+/* Contenido Medio de la descripción */
+
+/* Contenedor  */
+.contenedor-description {
+    width: 90%;
+    padding: 10px;
+    background-color: black;
+    box-shadow: 10px 10px 10px #fd9814;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    margin: 5%;
+    margin-top: 120px;
+    transition: all 900ms ease;
+}
+
+.contenedor-description:hover {
+    background: black;
+}
+
+.description-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.description-logo img {
+    width: 55%;
+    height: auto;
+    max-width: 350px;
+    margin-bottom: 20px;
+}
+
+.description {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.description h2 {
+    color: #fd9814;
+    margin-bottom: 20px;
+}
+
+.description p {
+    color: #fd9814;
+    text-align: justify;
+    padding: 20px;
+    line-height: 1.5;
+    font-size: 25px;
+}
+
+.custom-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #fd9814;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.custom-button:hover {
+    box-shadow: 0 0 10px 5px #fd9814;
+    background-color: black;
+    color: #fd9814;
+}
+
+#selected {
+    background-color: #fd9814;
+    color: black;
+    border-radius: 8px;
+    padding: 8px 35px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#selected:hover {
+    box-shadow: 0 0 10px 5px #fd9814;
+    background-color: black;
+    color: #fd9814;
+}
+
+@media (max-width: 768px) {
+
+    .description-logo img {
+        max-width: 230px;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .description-logo img {
+        max-width: 200px;
+    }
+
+    .custom-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
